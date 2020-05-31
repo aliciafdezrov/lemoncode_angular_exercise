@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import {
   MemberRowComponent,
   MemberHeadComponent,
   MembersTableComponent
 } from './members-table';
+import {MemberSearchComponent} from './members-search';
 
 @NgModule({
   imports: [
@@ -16,9 +17,11 @@ import {
     MemberRowComponent,
     MemberHeadComponent,
     MembersTableComponent,
+    MemberSearchComponent,
   ],
   exports: [
-    MembersTableComponent
+    MembersTableComponent,
+    MemberSearchComponent
   ]
 })
 export class MembersModule { }
